@@ -13,8 +13,10 @@
 
     <header>
       <nav class="nav-bar">
-        <img src="https://r69.cooltext.com/rendered/cooltext429110091723432.png" alt="logo-nom">
-
+        
+        <a href="#hero">
+        <img src="https://cdn-icons-png.flaticon.com/512/39/39192.png?w=740&t=st=1675850308~exp=1675850908~hmac=a52327248d6bb65ca486a2a99d2cdf523a6f20e108f1af53422eaf3de0089e96" alt="logo-nom">
+        </a>
         <ul>
           <li><a href="#about">PRESENTATION</a></li>
           <li><a href="#services">SERVICES</a></li>
@@ -29,7 +31,6 @@
     <main>
 
       <section id="hero">
-        <img src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="photo-1">
         <h1>MAXIMISEZ VOTRE POTENTIEL</h1>
         <p>
           Yoga et fitness illimités pour 20 €/mois ou 199 €/an. Commencez avec un essai gratuit de 14 jours.
@@ -39,14 +40,17 @@
 
       <section id="about">
         <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="photo-2">
+        <div class="side-1">
         <p>
             Ma mission est de donner aux individus les moyens de vivre leur meilleure vie 
             grâce à des habitudes saines et à une activité physique régulière.
+          <br> <br>
             Que vous soyez un athlète chevronné ou que vous débutiez votre parcours 
             de remise en forme, je travaillerai avec vous pour créer un plan d'entraînement 
             personnalisé qui correspond à vos besoins et à votre style de vie.
         </p>
         <button class="btn">Inscrire maintenant</button>
+      </div>
       </section>
 
 
@@ -54,17 +58,23 @@
         <img src="https://images.unsplash.com/photo-1574679626212-7d11aa571832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="photo-3">
 
         <div class="calendar">
-          <img src="https://sites.google.com/a/editorblogger.com/diplomado-implementacion-de-aulas-virtuales/_/rsrc/1472474322323/home/Google-Calendar-icon.png" alt="calendar">
+          <form action="https://getform.io/f/7c978ecb-d262-4042-8d10-8c44b884acd6" method="POST">
+            <label for="test">Programmez votre RDV en ligne gratuit</label>
+            <input type="text" name="name" placeholder="Nom Prénom">
+            <input type="email" name="email" placeholder="example@email.com">
+            <input type="text" name="message" placeholder="message">
+            <input type="date" name="date">
+            <!-- hidden Honeypot input to prevent spams -->
+            <input type="hidden" name="_gotcha" style="display:none !important">
+            <button type="submit">Réserver</button>
+        </form>
         </div>
-
-        <button class="btn">Réserver</button>
       </section>
 
-
       <section id="workout">
-        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="photo-4">
-        <iframe width="650" height="400" src="https://www.youtube.com/embed/gMA1FUpuELo?list=PL3KnTfyhrIlcudeMemKd6rZFGDWyK23vx" title="Cute dogs compilation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
+        <video controls autoplay muted loop>
+          <source src="workout-1.mp4" type="video/mp4">
+        </video>
       </section>
 
 
@@ -72,38 +82,40 @@
       <section id="contact">
 
         <h2>Merci d'avoir visité mon site.</h2>
+        <h3>Contactez-moi et recevez votre programme d'essai gratuit de 7 jours!</h3>
 
-        <form action="#" method="post">
-          <label for="name">Nom:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Prénom:</label>
-          <input type="prenom" id="prenom" name="prenom">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <input type="submit" value="Submit">
+        <form action="mailto:easiestgame32@gmail.com" method="post">
+          <input type="text" name="name" placeholder="Nom Prénom">
+          <input type="email" name="email" placeholder="example@email.com">
+          <input type="text" name="message" placeholder="message">
+          <button type="submit" value="Send Form">Soumettre</button>
         </form>
 
-        <p>
+        <h3>
         Vous pouvez également me suivre sur les réseaux 
         sociaux pour des mises à jour et des informations 
         supplémentaires sur mes services:
-        </p>
+        </h3>
 
-        <a href="https://www.instagram.com/your-username/" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/2175/2175198.png" alt="instagram" width="100" height="100">
-        </a>
+
+        <div class="social">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2175/2175198.png" alt="instagram" width="100" height="100">
+          </a>
+          
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="youtube" width="100" height="100">
+          </a>
+          
+          <a href="https://www.tiktok.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3669/3669950.png" alt="tiktok" width="100" height="100">
+          </a>
+
+      </div>
         
-        <a href="https://www.youtube.com/your-channel/" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="youtube" width="100" height="100">
-        </a>
-        
-        <a href="https://www.tiktok.com/@your-username/" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/3669/3669950.png" alt="tiktok" width="100" height="100">
-        </a>
-        
-        <p>
+        <h3>
         Je suis dans l'attente de votre réponse!
-        </p>
+        </h3>
 
       </section>
 
