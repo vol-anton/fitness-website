@@ -60,17 +60,14 @@ header {
     border-radius: 0 0 25px 25px;
 }
 
-header .nav-bar {
+.nav-bar {
     display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
-  
-.nav-bar {
     padding: 10px;
-    width: 960px;
-	max-width: 100%;
+    width: 100%;
+	max-width: 960px;
 	margin: 0 auto;
 }
   
@@ -110,6 +107,35 @@ header .nav-bar {
 
 
 
+/* RESPONSIVE NAV-BAR */
+
+@media only screen and (max-width: 550px) {
+
+    .nav-bar  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar ul li{
+        padding: 10px;
+    }
+}
+
+/* END OF RESP NAV */
+
+
+
+
+
+
+
+
+
 /* HERO SECTION */
 
 #hero {
@@ -121,6 +147,7 @@ header .nav-bar {
     padding: 100px 20px;
     margin-top: 100px;
     height: 85vh;
+    margin-bottom: 20vh;
 }
 
 #hero::before {
@@ -222,6 +249,46 @@ header .nav-bar {
 
 
 
+/* RESP PRESENTATION SECTION */
+
+@media only screen and (max-width: 960px) {
+
+    #about {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 50vh;
+    }
+    
+    #about::before {
+        content: "";
+        background-image: url(https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        border-radius: 25px;
+      }
+
+    #about img {
+        display: none;
+    }
+
+}
+
+/* END OF RESP PRESENTATION SECTION */
+
+
+
+
+
+
+
 
 /* SERVICES SECTION */
 
@@ -312,6 +379,64 @@ header .nav-bar {
 
 
 
+
+
+
+
+
+/* RESP SERVICES SECTION */
+
+@media only screen and (max-width: 960px) {
+
+    #services {
+        position: relative;
+    }
+    
+    #services::before {
+        content: "";
+        background-image: url(https://images.unsplash.com/photo-1574679626212-7d11aa571832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+        background-size: cover;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        border-radius: 25px;
+      }
+
+    #services img {
+        display: none;
+    }
+
+    #services form {
+        margin: 20px;
+    }
+
+    #services .calendar {
+        position: relative;
+        padding-top: 20vh;
+    }
+
+}
+
+
+/* END OF RESP SERVICES SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* WORKOUT SECTION */
 
 #workout {
@@ -324,9 +449,38 @@ header .nav-bar {
 #workout video {
     width: 100%;
     height: auto;
+    border-radius: 25px;
 }
 
 /* END OF WORKOUT SECTION */
+
+
+
+
+
+
+
+
+
+/* WORKOUT RESP SECTION */
+
+@media only screen and (max-width: 550px) {
+
+
+    #workout video {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        margin-top: 25vh;
+    }
+
+}
+
+/* END OF RESP WORKOUT SECTION */
+
+
+
+
 
 
 
